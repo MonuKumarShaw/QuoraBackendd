@@ -76,7 +76,7 @@ app.patch("/post/:id", (req, res) => {
     
 });
 // to edit 
-app.get("/post/:id/Edit", (req,res)=>{
+app.get("/post/:id/edit", (req,res)=>{
     const {id} = req.params;
     const post = posts.find((p) => p.id == id);
     res.render("Edit.ejs",{post});
